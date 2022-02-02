@@ -1,9 +1,4 @@
 <?php
-
-// Use in the “Post-Receive URLs” section of your GitHub repo.
-
-if ( $_POST['payload'] ) {
-shell_exec( 'cd /home/lafor038/.www/public/SpatialDSResearch && git reset -hard HEAD && git pull' );
-}
-
-?>hi
+`git pull`;
+echo shell_exec('whoami');
+?>
